@@ -1,0 +1,32 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+}
+
+.visual-timer {
+    border-top: 50px solid #004D00;
+    margin: 5% auto;
+    width: 50%;
+}
+
+.timer-wrapper {
+    align-items: center;
+    background-color: #009900;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    margin: 0 auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+#time {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
