@@ -7,7 +7,7 @@ body {
     background-color: #004d00;
     height: 25px;
     margin: 5% auto;
-    width: 600px;
+    width: 100vw;
 }
 
 .width-change {
@@ -20,20 +20,20 @@ body {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes widthChange {
-    0%   {width: 600px;}
-    25%  {width: 450px;}
-    50%  {width: 300px;}
-    75%  {width: 150px;}
-    100% {width: 0px;}
+    0%   {width: 100vw;}
+    25%  {width: 75vw;}
+    50%  {width: 50vw;}
+    75%  {width: 25vw;}
+    100% {width: 0vw;}
 }
 
 /* Standard syntax */
 @keyframes widthChange {
-    0%   {width: 600px;}
-    25%  {width: 450px;}
-    50%  {width: 300px;}
-    75%  {width: 150px;}
-    100% {width: 0px;}
+    0%   {width: 100vw;}
+    25%  {width: 75vw;}
+    50%  {width: 50vw;}
+    75%  {width: 25vw;}
+    100% {width: 0vw;}
 }
 
 #timer-wrapper {
