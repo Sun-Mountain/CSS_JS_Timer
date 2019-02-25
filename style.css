@@ -1,34 +1,36 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0 auto;
+    margin: 0;
 }
 
-.visual-timer {
-    border-top: 50px solid #004D00;
+#visual-timer {
+    background-color: #004d00;
+    height: 25px;
     margin: 5% auto;
-    width: 50%;
+    width: 600px;
+}
 
+.width-change {
     /* Animation code */
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: widthChange; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: widthChange;
     animation-duration: 60s;
 }
 
-
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {width: 50%;}
-    to {width: 1%;}
+@-webkit-keyframes widthChange {
+    from {background-color: 600px;}
+    to {width: 0px;}
 }
 
 /* Standard syntax */
-@keyframes example {
-    from {width: 50%;}
-    to {width: 1%;}
+@keyframes widthChange {
+    from {width: 600px;}
+    to {width: 0px;}
 }
 
-.timer-wrapper {
+#timer-wrapper {
     align-items: center;
     background-color: #009900;
     border-radius: 50%;

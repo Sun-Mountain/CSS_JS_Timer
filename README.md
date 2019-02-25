@@ -34,6 +34,40 @@ An **animation** just run and do their thing regardless of anything else happeni
 
 At this point I realized that the title of this whole project (_Making An Animated Timer With CSS & JavaScript_) is a lie. What I am actually making is a _Transitional Timer_ with CSS & JavaScript.
 
+## Step Four - Add animation independent of JS
+I was able to add a div that would shrink over the course of a designated time in the CSS code.
+
+```
+.visual-timer {
+    border-top: 50px solid #004D00;
+    margin: 5% auto;
+    width: 50%;
+}
+
+.anim {
+    /* Animation code */
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 60s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {width: 50%;}
+    to {width: 1%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {width: 50%;}
+    to {width: 1%;}
+}
+```
+
+## Step Five - connect the start of the animation with the start of JS function
+I realized that the easiest way to initiate the animation
+
 
 What is your opinion on the technology after having built something with it?
 What are the biggest conceptual hurdles (if any) you encountered when researching this?
