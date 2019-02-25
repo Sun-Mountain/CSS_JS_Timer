@@ -81,10 +81,15 @@ But then I found another way to breakdown the animation so that it did not go as
 This way it hit half way thru the length of the animation when the timer _was_ at 30 seconds. However, the rate at which the width changes still isn't as consistent as I would like.
 
 ## What article(s) or forum(s) was most helpful to you in learning this?
+
 https://css-tricks.com/controlling-css-animations-transitions-javascript/
+
 https://www.sitepoint.com/css3-animation-javascript-event-handlers/
+
 https://www.w3schools.com/css/css3_animations.asp
+
 https://www.w3schools.com/howto/howto_js_add_class.asp
+
 https://gomakethings.com/two-ways-to-set-an-elements-css-with-vanilla-javascript/
 
 ## For the Future
