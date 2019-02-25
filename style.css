@@ -7,6 +7,25 @@ body {
     border-top: 50px solid #004D00;
     margin: 5% auto;
     width: 50%;
+
+    /* Animation code */
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 60s;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    from {width: 50%;}
+    to {width: 1%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    from {width: 50%;}
+    to {width: 1%;}
 }
 
 .timer-wrapper {
