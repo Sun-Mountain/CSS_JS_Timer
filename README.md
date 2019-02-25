@@ -66,13 +66,15 @@ I was able to add a div that would shrink over the course of a designated time i
 ```
 
 ## Step Five - connect the start of the animation with the start of JS function
-By adding `visualTimer.classList.add("width-change");` at the beginning of the function I am able to initiate the animation when the timer started to count down. However, it would only work once and then not re-initiate when the timer reset.
+By adding  `visualTimer.classList.add("width-change");`  at the beginning of the function I am able to initiate the animation when the timer started to count down. However, it would only work once and then not re-initiate when the timer reset.
 
-This was easily fixed by adding `visualTimer.classList.remove("width-change");` when the timer reset, allowing the function to re-initialize the animation when the function looped thru.
+This was easily fixed by adding  `visualTimer.classList.remove("width-change");`  when the timer reset, allowing the function to re-initialize the animation when the function looped thru.
 
+## What are the biggest conceptual hurdles (if any) you encountered when researching this?
+At this point, I was still not happy with how the animation doesn't reflect when the timer is half way thru it's countdown and seems to disappear before the countdown finishes.
 
-What is your opinion on the technology after having built something with it?
-What are the biggest conceptual hurdles (if any) you encountered when researching this?
-What resources do you recommend for interested students?
-What article or forum was most helpful to you in learning this?
-What are 3 interview questions one might be asked about this technology?
+But then I found another way to breakdown the animation so that it did not go as quickly.
+
+## What article or forum was most helpful to you in learning this?
+https://css-tricks.com/controlling-css-animations-transitions-javascript/
+https://www.sitepoint.com/css3-animation-javascript-event-handlers/

@@ -20,14 +20,20 @@ body {
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes widthChange {
-    from {background-color: 600px;}
-    to {width: 0px;}
+    0%   {width: 600px;}
+    25%  {width: 450px;}
+    50%  {width: 300px;}
+    75%  {width: 150px;}
+    100% {width: 0px;}
 }
 
 /* Standard syntax */
 @keyframes widthChange {
-    from {width: 600px;}
-    to {width: 0px;}
+    0%   {width: 600px;}
+    25%  {width: 450px;}
+    50%  {width: 300px;}
+    75%  {width: 150px;}
+    100% {width: 0px;}
 }
 
 #timer-wrapper {
