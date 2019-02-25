@@ -44,29 +44,31 @@ I was able to add a div that would shrink over the course of a designated time i
     width: 50%;
 }
 
-.anim {
+.width-change {
     /* Animation code */
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-name: widthChange; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 60s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
+    animation-name: widthChange;
     animation-duration: 60s;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-    from {width: 50%;}
-    to {width: 1%;}
+@-webkit-keyframes widthChange {
+    from {background-color: 600px;}
+    to {width: 0px;}
 }
 
 /* Standard syntax */
-@keyframes example {
-    from {width: 50%;}
-    to {width: 1%;}
+@keyframes widthChange {
+    from {width: 600px;}
+    to {width: 0px;}
 }
 ```
 
 ## Step Five - connect the start of the animation with the start of JS function
-I realized that the easiest way to initiate the animation
+By adding `visualTimer.classList.add("width-change");` at the beginning of the function I am able to initiate the animation when the timer started to count down. However, it would only work once and then not re-initiate when the timer reset.
+
+This was easily fixed by adding `visualTimer.classList.remove("width-change");` when the timer reset, allowing the function to re-initialize the animation when the function looped thru.
 
 
 What is your opinion on the technology after having built something with it?
